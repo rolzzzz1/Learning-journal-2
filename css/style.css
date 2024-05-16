@@ -88,12 +88,10 @@ body {
 
 .heroPostDiv {
   display: block;
-  /* height: 290px; */
-  /* width: 100%; */
-  background: url("../images/article-image-hero.jpg");
+  background: url("./images/article-image-hero.jpg");
   background-size: cover;
-  color: #ffffff;
-  padding: 20px;
+  padding: 20px 20px 10px 20px;
+  cursor: pointer;
 }
 
 .heroPostText {
@@ -103,10 +101,17 @@ body {
   min-height: 290px;
   max-width: 660px;
   font-family: "Source Sans 3", sans-serif;
+  color: #ffffff;
+}
+
+.heroPostTextDark {
+  color: #151515;
+  padding-top: 10px;
 }
 
 .heroPostText span {
   font-size: 12px;
+  font-weight: 400;
   margin: 0;
   padding: 0;
 }
@@ -120,13 +125,24 @@ body {
 .heroPostText p {
   font-size: 16px;
   margin: 0;
-  padding: 10px 0 0 0;
+  padding: 10px 0;
 }
 
 /* Articles div */
 
+.acrticleDivTitle {
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "Source Sans 3", sans-serif;
+  text-align: center;
+}
+
 .arcticlesDiv {
-  padding: 20px 20px 10px 20px;
+  padding: 20px;
+}
+
+.arcticlesDivDark {
+  padding: 10px 20px 20px 20px;
 }
 
 .articleImg {
@@ -176,6 +192,10 @@ article {
 .viewMBtn:active,
 .viewMBtn:focus {
   outline: none;
+}
+
+.hidden {
+  display: none;
 }
 
 @media (min-width: 480px) {
